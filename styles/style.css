@@ -1,0 +1,434 @@
+/* Text-Sizes */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+input, select {
+    font-size: 1em;
+}
+
+/* All Stlyes for the Main-Section */
+#main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: var(--menu-width)	;
+    right: 0;
+    left: var(--menu-width);
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 20px;  
+    padding-bottom: 50px;
+    color: var(--main-text-color);
+    font-family: var(--font);
+}
+
+#main a, #closeBtn {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    border: var(--border-all);
+}
+
+#main a:hover, #closeBtn:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+#main button, input, textarea {
+    display: block;
+    color: var(--button-text-color);
+    text-decoration: none;
+    background-color: var(--button-color);
+    margin: 10px;
+    padding: 10px;
+    border: var(--border-all);
+}
+
+#main button {
+    position: absolute;
+}
+
+#main button:hover, input:hover{
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+#main select, select option {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border: var(--border-all);
+    height: 50px;
+    width: auto;
+}
+
+#main select:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+#main #item_Container {
+    /* Eine Voci-Karte */
+    position: absolute;
+    left: 50%;
+    opacity: 1;
+    border: var(--border-all);
+    font-size: 120%;
+    width: 420px;
+    height: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+#main #item {
+    margin: 20px;
+    position: absolute;
+}
+
+#main h1, h2 {
+    /* Alle Title sind in der Mitte der Seite */
+    text-align: center;
+}
+
+/* The Style for the right, empty div */
+#right {
+    width: var(--menu-width);
+    right: 0;
+    position: fixed;
+    height: 100%;
+    border: var(--border-all);
+    z-index: 3;
+    background-color: var(--menu-background-color);
+}
+
+#right img {
+    width: var(--menu-width);
+    height: auto;
+    position: relative;
+    margin: -150px 2px 0 2px;
+    top: 50%;
+    border: var(--border-all);
+}
+
+#right img:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+    opacity: 0.75;
+}
+
+/* The Style for the background-div */
+#back {
+    z-index: 1;
+    background-color: var(--main-background-color);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+/* The Style for the menu */
+#menu {
+    /* The Menu */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: var(--menu-width);
+    float: left;
+    left: 0;
+    margin-right: 10px;
+    background-color: var(--menu-background-color);
+    border-right: var(--border-all);
+    padding-top: 75px;
+    color: var(--menu-text-color);
+    font-family: var(--font);
+    z-index: 4;
+}
+
+#menu hr {
+    color: var(--menu-background-color);
+    height: 1px;
+    border-bottom: var(--border-all);
+    margin: 0 5px;
+}
+
+#menu img {
+    /* Image container of main section
+    Aim: image centered */
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+/* The Style for the header */
+#header {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: var(--border-all);
+    font-size: large;
+    background-color: var(--header-background-color);
+    padding: 10px;
+    z-index: 6;
+    color: var(--header-text-color);
+    font-family: var(--font);
+}
+
+#header a {
+    border: var(--border-all);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    position: absolute;
+    top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 100px;
+}
+
+#header #logBut {
+    right: var(--menu-width);
+    margin-right: 10px;
+}
+#header #homeBut {
+    right: var(--menu-width);
+    margin-right: 140px;
+}
+
+#header a:hover {
+    /* Buttons in the header */
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+/* The Style for the Footer */
+#footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--footer-background-color);
+    color: var(--footer-text-color);
+    border-top: var(--border-all);
+    font-size: large;
+    padding: 10px;
+    z-index: 5;
+    font-family: var(--font);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+/* The Style for the table (manage.php) */
+table {
+    color: var(--main-text-color);
+    border-color: var(--main-text-color);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+table th
+{
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+table td
+{
+    text-align: left;
+    padding: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/* Style for round corners */
+a, input, select, button, #item_Container {
+    border-radius: 5px;
+}
+
+/* Style for menu-entries */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: var(--menu-text-color);
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+
+}
+
+/* Style for anchors */
+a[name] {
+    visibility: hidden;
+}
+
+/* Style for forms */
+form input, textarea {
+    background-color: var(--button-color);
+}
+
+form button {
+    padding: 5px;
+}
+
+/* Style for Trainer */
+#sol {
+    background-color: var(--button-color);
+    width: 98%;
+    border: var(--border-all);
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+#sol:hover, #item_Container:hover {
+    background-color: var(--hover-color);
+    color: var(--main-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+#item_Container {
+    background-color: var(--button-color);
+}
+
+/* Content-Divs */
+.single-content {
+    clear: both;
+    padding: 15px;
+    background-color: var(--div-color);
+    margin: 10px;
+    height: auto;
+    display: block;
+    border-bottom: var(--border-all);
+    border-top: var(--border-all);
+}
+
+.double-content-left {
+    padding: 15px;
+    padding-bottom: 20px;
+    width: 40%;
+    float: left;
+    margin: 10px;
+    display: inline-block;
+}
+
+.double-content-right {
+    padding: 15px;
+    padding-bottom: 20px;
+    width: 40%;
+    float: right;
+    margin: 10px;
+    display: inline-block;
+}
+
+.title-content {
+    clear: both;
+    padding: 10px;
+    background-color: var(--main-background-color);
+    color: var(--header-text-color);
+    margin: 10px 50px 10px 10px;
+    display: block;
+}
+
+.double-content-row {
+    display:block;
+    clear: both;
+    border-bottom: var(--border-all);
+    border-top: var(--border-all);
+}
+
+.double-content-row h2 {
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Content in this div is centered as the name says */
+.centered {
+    text-align: center;
+}
+
+.centered table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Style for the Captcha-Class */
+.captcha {
+    border: var(--border-all);
+    border-radius: 5px;
+    background-color: var(--button-color);
+}
+
+.captcha:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 1), 0px 1px 2px rgba(0, 0, 0, 0);
+}
+
+/* Custom-Styled alert-box */
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+}
+
+#alertBox {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    margin-top: 100px;
+    background-color: var(--div-color);
+    border: var(--border-all);
+    border-radius: 10px;
+    padding: 10px;
+    font: var(--font);
+}
+
+#modalContainer > #alertBox {
+    position: fixed;
+}
+
+#alertBox h1 {
+    margin: 0;
+    font: bold 100% var(--font);
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    border-bottom:1px solid #000;
+    padding:2px 0 2px 5px;
+}
+
+#alertBox a {
+    float: right;
+}
