@@ -17,10 +17,10 @@
 	</head>
 	<!-- NAVBAR
 		================================================== -->
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="150" id="home">
 		<div class="navbar-wrapper">
 			<div class="container">
-				<nav class="navbar navbar-inverse navbar-static-top">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,9 +33,14 @@
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="download.html">Download</a></li>
-								<li><a href="about.html">About</a></li>
+								<li class="active"><a href="#home">Home</a></li>
+								<li><a href="#languages">Languages</a></li>
+								<li><a href="#design">Design</a></li>
+								<li><a href="#android">Android</a></li>
+								<li><a href="#download">Download</a></li>
+							</ul>
+							<ul class="nav navbar-nav pull-right">
+								<li class="pull-right"><a href="about.html">About</a></li>
 							</ul>
 						</div>
 					</div>
@@ -106,8 +111,7 @@
 			<!-- START THE FEATURETTES -->
 			<hr class="featurette-divider">
 			<div class="row featurette">
-				<div class="col-md-7">
-					<a name="languages"></a>
+				<div class="col-md-7" id="languages">
 					<h2 class="featurette-heading">We offer a text.<br/><span class="text-muted">English. German.</span></h2>
 					<p class="lead">The app is currently available in English and German. We are currently not working on more language support due to our great ideas for the rest of the app. We will support more languages in a short time!</p>
 					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
@@ -118,8 +122,7 @@
 			</div>
 			<hr class="featurette-divider">
 			<div class="row featurette">
-				<div class="col-md-7 col-md-push-5">
-					<a name="design"></a>
+				<div class="col-md-7 col-md-push-5" id="design">
 					<h2 class="featurette-heading">We offer a color.<br/><span class="text-muted">Design.</span></h2>
 					<p class="lead">We created several designs, each color well picked. Choose the design that fits your personal interests and doesn't bother you. Change the design when you wish. It's your personal feeling.</p>
 					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
@@ -130,8 +133,7 @@
 			</div>
 			<hr class="featurette-divider">
 			<div class="row featurette">
-				<div class="col-md-7">
-					<a name="android"></a>
+				<div class="col-md-7" id="android">
 					<h2 class="featurette-heading">We offer an app.<br/><span class="text-muted">Android.</span></h2>
 					<p class="lead">Due to our programmer skills, we currently only offer the app for android. We will as well expand our skills and make some steps towards other operating systems.</p>
 					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
@@ -141,12 +143,22 @@
 				</div>
 			</div>
 			<hr class="featurette-divider">
-			<a href="download.html" class="btn btn-default btn-block"><h1 class="text-muted">Download &raquo;</h1></a>		
+			<div class="row featurette">
+				<div class="col-md-7 col-md-push-5" id="download">
+					<h2 class="featurette-heading">We offer a download.<br/><span class="text-muted">SchoolTool.</span></h2>
+					<p class="lead">TODO: Change this text right here!</p>
+					<p><a class="btn btn-primary btn-block" href="download.html">Download &raquo;</a></p>
+					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
+				</div>
+				<div class="col-md-5 col-md-pull-7">
+					<img class="featurette-image img-responsive center-block img-rounded visible-lg-block" data-src="holder.js/500x500?text=Download&bg=1976D2&fg=ffffff">
+				</div>
+			</div>
 			<hr class="featurette-divider">
 			<!-- /END THE FEATURETTES -->
 			<!-- FOOTER -->
 			<footer>
-				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p class="pull-right"><a class="btn btn-default" href="about.html">About</a>&nbsp;<a href="#">Back to top</a></p>
 				<p>&copy; 2016 Matthias Busenhart &middot; Jeremy Roth</p>
 			</footer>
 		</div>
