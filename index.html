@@ -1,19 +1,19 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta name="description" content="Homepage for the SchoolTool Android App. Download now!">
+		<meta name="author" content="SchoolTool Team">
 		<link rel="icon" href="res/favicon.ico">
 		<title>SchoolTool - Home</title>
-		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<!-- Custom styles for this template -->
 		<link href="css/carousel.css" rel="stylesheet">
 		<script src="js/holder.js"></script>
+		
 	</head>
 	<!-- NAVBAR
 		================================================== -->
@@ -29,7 +29,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">SchoolTool</a>
+							<a class="navbar-brand" href="#home">SchoolTool</a>
 						</div>
 						<div id="navbar" class="navbar-collapse collapse">
 							<ul class="nav navbar-nav">
@@ -114,7 +114,7 @@
 				<div class="col-md-7" id="languages">
 					<h2 class="featurette-heading">We offer a text.<br/><span class="text-muted">English. German.</span></h2>
 					<p class="lead">The app is currently available in English and German. We are currently not working on more language support due to our great ideas for the rest of the app. We will support more languages in a short time!</p>
-					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
+					<p><a class="btn btn-default" href="#home" role="button">To the top &raquo;</a></p>
 				</div>
 				<div class="col-md-5">
 					<img class="featurette-image img-responsive center-block img-rounded visible-lg-block" data-src="holder.js/500x500?bg=1976D2&fg=ffffff&text=Languages">
@@ -125,7 +125,7 @@
 				<div class="col-md-7 col-md-push-5" id="design">
 					<h2 class="featurette-heading">We offer a color.<br/><span class="text-muted">Design.</span></h2>
 					<p class="lead">We created several designs, each color well picked. Choose the design that fits your personal interests and doesn't bother you. Change the design when you wish. It's your personal feeling.</p>
-					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
+					<p><a class="btn btn-default" href="#home" role="button">To the top &raquo;</a></p>
 				</div>
 				<div class="col-md-5 col-md-pull-7">
 					<img class="featurette-image img-responsive center-block img-rounded visible-lg-block" data-src="holder.js/500x500?text=Design&bg=bf3612&fg=ffffff">
@@ -136,7 +136,7 @@
 				<div class="col-md-7" id="android">
 					<h2 class="featurette-heading">We offer an app.<br/><span class="text-muted">Android.</span></h2>
 					<p class="lead">Due to our programmer skills, we currently only offer the app for android. We will as well expand our skills and make some steps towards other operating systems.</p>
-					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
+					<p><a class="btn btn-default" href="#home" role="button">To the top &raquo;</a></p>
 				</div>
 				<div class="col-md-5">
 					<img class="featurette-image img-responsive center-block img-rounded visible-lg-block" data-src="holder.js/500x500?text=Android&bg=7CB342&fg=ffffff">
@@ -148,7 +148,7 @@
 					<h2 class="featurette-heading">We offer a download.<br/><span class="text-muted">SchoolTool.</span></h2>
 					<p class="lead">Finally, the app. Check it out by clicking on the link below. You won't regret it.</p>
 					<p><a class="btn btn-primary btn-block" href="download.html">Download &raquo;</a></p>
-					<p><a class="btn btn-default" href="#" role="button">To the top &raquo;</a></p>
+					<p><a class="btn btn-default" href="#home" role="button">To the top &raquo;</a></p>
 				</div>
 				<div class="col-md-5 col-md-pull-7">
 					<img class="featurette-image img-responsive center-block img-rounded visible-lg-block" data-src="holder.js/500x500?text=Download&bg=1976D2&fg=ffffff">
@@ -163,12 +163,24 @@
 			</footer>
 		</div>
 		<!-- /.container -->
-		<!-- Bootstrap core JavaScript
-			================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 		<script src="js/jquery.js"></script>
-		<!--script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script-->
 		<script src="js/bootstrap.js"></script>
+		<script rel="text/javascript">
+			$(function() {
+			$('a[href*="#"]').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  var target = $(this.hash);
+				  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				  if (target.length) {
+					$('html, body').animate({
+					  scrollTop: target.offset().top
+					}, 750);
+					return false;
+				  }
+				}
+			  });
+			});
+		</script>
+		
 	</body>
 </html>
