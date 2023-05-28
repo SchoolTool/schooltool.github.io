@@ -1,0 +1,34 @@
+div.jumbotron.carousel-hero {
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+div.jumbotron.hero-nature {
+  background-image: url('../../assets/img/hero-background-nature.jpg?h=3551ddb9241954562f5b5094c6693687');
+}
+
+div.jumbotron.hero-photography {
+  background-image: url('../../assets/img/hero-background-photography.jpg?h=548665975ba97801504637807428ef43');
+}
+
+div.jumbotron.hero-technology {
+  background-image: url('../../assets/img/hero-background-technology.jpg?h=6cc40f253bd89ef808b88ff9d4fde97b');
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+p.hero-subtitle {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 10px 15px;
+  color: #fff;
+}
+
