@@ -1,0 +1,67 @@
+.box {
+  color: white;
+  background-color: inherit;
+  border-color: white;
+}
+
+.box:hover {
+  color: black;
+  background-color: white;
+  animation: moved ease-in-out 0.5s backwards;
+}
+
+@keyframes moved {
+  0% {
+    color: white;
+    background-color: inherit;
+  }
+  100% {
+    color: black;
+    background-color: white;
+    border-color: white;
+  }
+}
+
+.day-message {
+  margin-top: 6.5%;
+  font-size: 50px;
+  animation: fadeIn ease-in-out 3.5s backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.clean {
+  text-decoration: none;
+}
+
+.clean:hover {
+  text-decoration: none;
+}
+
+.box:not(:hover) {
+  animation: unmoved ease-in-out 0.5s backwards;
+}
+
+@keyframes unmoved {
+  0% {
+    color: black;
+    background-color: inherit;
+  }
+  100% {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+  }
+}
+
